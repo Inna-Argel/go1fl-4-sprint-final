@@ -48,7 +48,7 @@ func parseTraining(data string) (int, string, time.Duration, error) {
 		return 0, "", 0, fmt.Errorf("ошибка парсинга продолжительности: %v", err)
 	}
 
-	// ДПроверяем, что продолжительность > 0
+	// Проверяем, что продолжительность > 0
 	if duration <= 0 {
 		return 0, "", 0, fmt.Errorf("продолжительность должна быть положительной")
 	}
