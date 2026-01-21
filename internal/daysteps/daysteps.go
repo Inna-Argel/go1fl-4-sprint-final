@@ -13,6 +13,7 @@ import (
 const (
 	// Длина одного шага в метрах
 	stepLength = 0.65
+
 	// Количество метров в одном километре
 	mInKm = 1000
 )
@@ -78,5 +79,3 @@ func DayActionInfo(data string, weight, height float64) string {
 	return fmt.Sprintf("Количество шагов: %d.\nДистанция составила %.2f км.\nВы сожгли %.2f ккал.\n",
 		steps, distanceKm, calories)
 }
-
-// Файл daysteps.go - модуль для расчета дневной активности
